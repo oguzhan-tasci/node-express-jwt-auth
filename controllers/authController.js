@@ -15,8 +15,9 @@ module.exports.signup_post = async (req, res) => {
 }
 
 module.exports.login_post = async (req, res) => {
+  // console.log(req.body) --> Postmandan post işlemi yaptığımızda çıktısı böyle oluyor : {email : 'mario@google.com' , password : 'test12'}
   const { email, password } = req.body;
-
   console.log(email, password);
+  
   res.send('user login');
 }
